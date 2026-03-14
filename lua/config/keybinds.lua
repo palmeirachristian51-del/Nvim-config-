@@ -202,3 +202,7 @@ vim.keymap.set("n", "<leader>q", function()
   vim.fn.chansend(vim.b.terminal_job_id, table.concat(cmd, " ") .. "\n")
 end, { desc = "Executar arquivo/projeto" })
 
+
+vim.keymap.set("n", "<leader>ut", function()
+    require("config.theme-switch").toggle()
+end, { desc = "Toggle Theme" })
